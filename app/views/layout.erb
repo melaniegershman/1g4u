@@ -11,13 +11,22 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>1G4U</title>
 </head>
 <body>
+  <header>
+    <nav>
+        <li class="nav-list"><a href="/users/new">register</a></li>
+        <li class="nav-list"><a href="/sessions/new">log in</a></li>
+    </nav>
+  </header>
   <%= yield %>
+  <footer>Coded by Melanie Gershman😈</footer>
 </body>
 </html>
+
+

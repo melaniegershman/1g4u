@@ -1,9 +1,64 @@
+body {
+  background: #3494E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+}
+
 .container {
+  opacity: 0.9;
   margin: 20px auto;
   width: 600px;
+  height: 600px;
+  margin-top: 150px;
+  margin-bottom: 300px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  /*border: 5px solid #f3a5cd;*/
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-box-shadow: -1px -1px 35px 14px rgba(255,255,255,0.7);
+  -moz-box-shadow: -1px -1px 35px 14px rgba(255,255,255,0.7);
+  box-shadow: -1px -1px 35px 14px rgba(255,255,255,0.7);
 }
-th {
-  text-align: left;
+
+.button {
+  text-align: center;
+}
+
+.button input {
+  position: relative;
+  background: #E0EAFC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 8px;
+  padding: 9px;  
+  color: #757575; 
+  
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 59px;
+  color: #757575;
+}
+
+nav li{
+  padding: 10px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav a{
+  background-color: ;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
 }
