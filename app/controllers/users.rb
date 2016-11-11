@@ -7,7 +7,8 @@ post '/users' do
   @user = User.new(params[:user])
   if @user.save
     puts "User was saved!"
-    erb :'/users/show'
+    session[:user_id] = @user.id
+    redirect "/"
   else
     puts "User wasn't saved!"
     redirect '/users/new'

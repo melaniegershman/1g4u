@@ -1,10 +1,18 @@
 <div class="container">
-  <h1>1 Gif 4 U</h1>
+  
   <form action="/" class="button">
     <input type="submit" name="submit" value="Click me!">
   </form>
+  
+  <% if logged_in? %>
+    <div class="gif">
+    <%if @gif %>
+      <img src= '<%="#{@gif}"%>'>
+      <% end %>
+    </div>
+  <% else %>
+    <p class="error">(psst... you're not logged in.)</p>
+  <% end %>
 </div>
 
-<div>
-  <img src="">
-</div>
+
