@@ -11,13 +11,31 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>1G4U</title>
 </head>
 <body>
+  <header>
+    <h1>1 Gif 4 U</h1>
+    <nav>
+      <% if logged_in? %>
+      <ul>
+        <li><a href=<%= "/users/#{current_user.id}" %>><%= current_user.username %></a></li>
+        <li><a href='/'>Home</a></li>
+        <li><form action='/sessions' method='POST'><input type='hidden' name='_method' value='DELETE'><input type='submit' value='Log Out'></form></li>
+      <% else %>
+        <li><a href="/users/new">register</a></li>
+        <li><a href="/sessions/new">log in</a></li>
+        <li><a href='/'>Home</a></li>
+      </ul> 
+      <% end %>
+    </nav>
+  </header>
   <%= yield %>
+  <footer>Coded by Melanie Gershman😈</footer>
 </body>
 </html>
+
