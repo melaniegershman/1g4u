@@ -16,5 +16,5 @@ Person.prototype.greeting = function(msg){
   return str;
 }
 
-var myself = new Person('Alice','NYC','bomberetta@gmail.com');
+var myself = new Person('Alice','NYC','test@gmail.com');
 myself.greeting('Hi, Melanie! Email me here at ' + myself.email + ' !!');
